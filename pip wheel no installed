@@ -1,0 +1,2 @@
+Q:Could not build wheels for pyaudio, since package 'wheel' is not installed
+A:pip3 install --upgrade pip setuptools wheel
