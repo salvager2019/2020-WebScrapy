@@ -1,0 +1,52 @@
+import pymysql
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+import datetime
+import time
+import random
+import re
+import ssl
+#import MySQLdb
+
+ssl._create_default_https_context = ssl._create_unverified_context
+# open mysql
+conn = pymysql.connect(host='127.0.0.1', unix_socket='/Applications/MAMP/tmp/mysql/mysql.sock',
+                       user='root', password='root', db='scraping', port='8889' , charset='utf8')
+cur = conn.cursor()
+cur.execute('USE scraping')
+
+random.seed(datetime.datetime.now())
+
+
+def store(title, content):
+    dt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    #pymysql.escape_string("'")
+    str_content = pymysql.escape_string(content)
+    #print(dt)
+    sql = "insert into pages(title, content, created) VALUES('%s','%s','%s')" % (title, str_content, dt)
+    #cur.execute('INSERT INTO pages (title, content, created) VALUES ("%s","%s","%s")', (title, content, dt))
+    print(sql)
+    cur.execute(sql)
+    cur.connection.commit()
+
+
+def getLinks(articleUrl):
+    html = urlopen('http://en.wikipedia.org' + articleUrl)
+    bs = BeautifulSoup(html, 'html.parser')
+    title = bs.find('h1').get_text()
+    content = bs.find('div', {'id': 'mw-content-text'}).find('p').get_text()
+    store(title, content)
+    return bs.find('div', {'id': 'bodyContent'}).findAll('a', href=re.compile('^(/wiki/)((?!:).)*$'))
+
+
+links = getLinks('/wiki/Kevin_Bacon')
+
+try:
+    while len(links) > 0:
+        print(len(links))
+        newArticle = links[random.randint(0, len(links) - 1)].attrs['href']
+        print(newArticle)
+        links = getLinks(newArticle)
+finally:
+    cur.close()
+    conn.close()
