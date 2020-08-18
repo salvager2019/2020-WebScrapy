@@ -1,0 +1,10 @@
+1. Open Anaconda Prompt in Administrative mode.
+2. conda update conda 3. conda update anaconda
+4. conda create -n dlib_env python=3.6
+5. conda activate dlib_env
+6. conda install -c conda-forge dlib
+7. python
+7.1 >>> import dlib 7.2 >>> dlib.__version__
+
+
+pip3 isntall face_recognition
