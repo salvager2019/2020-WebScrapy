@@ -1,0 +1,18 @@
+env:
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\extras\CUPTI\lib64
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\lib\x64
+C:\Tools\cuda\bin
+C:\Tools\TensorRT-6.0.1.5
+C:\Tools\cuda
+C:\Octave\Octave-5.2.0\mingw64\bin
+C:\Program Files\Polyspace\R2020b\bin
+
+pip3 install matlab_kernel
+pip3 install octave_kernel
+
+cd  C:\Program Files\Polyspace\R2020b\extern\engines\python
+python setup.py install
+
+pip3 install notebook
