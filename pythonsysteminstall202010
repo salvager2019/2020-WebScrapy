@@ -16,3 +16,20 @@ cd  C:\Program Files\Polyspace\R2020b\extern\engines\python
 python setup.py install
 
 pip3 install notebook
+
+##############visual studio 2019################
+企业版产品密钥为：
+Visual Studio 2019 Enterprise
+BF8Y8-GN2QH-T84XB-QVY3B-RC4DF
+
+专业版为：
+Visual Studio 2019 Professional
+NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y
+
+##############fastbook install#################
+conda install -c fastai fastbook
+pip3 install fastbook
+conda install python-graphviz
+pip install -Uqq fastbook
+pip install --user graphviz
+conda update --all
