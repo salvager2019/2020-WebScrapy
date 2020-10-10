@@ -64,6 +64,10 @@ torchvision        pytorch/win-64::torchvision-0.7.0-py38_cu101
 conda list
 conda remove beautifulsoup4
 
+##############Test tensorflow#################
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+
 ##############node.js install#################
 node -v;npm -v
 
