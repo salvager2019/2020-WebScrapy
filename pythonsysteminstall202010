@@ -87,6 +87,15 @@ print("GPU is", "available" if gpu else "NOT AVAILABLE")
 ##############node.js install#################
 node -v;npm -v
 
+##############sublime install#################
+1\shift+ctrl+p
+2\install
+3\install package
+4\Monokai++ ayu terminus material(theme)
+5\"update_check": false,
+6\{ "keys": ["ctrl+shift+t"], "command": "toggle_terminus_panel" }
+
+
 ##############node.js install#################
 fastai v2 windows运行错误解决：RuntimeError: cuda runtime error (801) : operation not supported at ..\torch/csrc/generic/StorageSharing.cpp:247
 解决办法：在ImageDataLoaders中添加：num_workers=0
@@ -179,3 +188,7 @@ jupyter labextension install @kiteco/jupyterlab-kite
 jupyterlab-variableInspector 帮助我们在 jupyter lab 中查看当前环境中存在的变量相关信息，以美观的界面形式对多种类型的对象予以呈现：
 安装命令：
 jupyter labextension install @lckr/jupyterlab_variableinspector
+
+
+
+
