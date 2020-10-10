@@ -114,8 +114,16 @@ nvidia-smi
 
 
 ##############jupyter lab ex install#################
-maybe you use 2.2.0a1
-pip3 install --pre jupyterlab==2.2.0a1
+#maybe you use 2.2.0a1
+#pip3 install --pre jupyterlab==2.2.0a1
+conda update notebook
+conda install jupyter notebook
+conda install -c conda-forge jupyter_nbextensions_configurator
+conda install -c conda-forge jupyter_contrib_nbextensions
+
+pip3 install jupyter_contrib_nbextensions
+in jupyter menu select：nbextensions hinterland
+
 
 ****2.1 debugger
 在 jupyter notebook 或 jupyter lab 中debug有多么蛋疼，尝试过的朋友们应该都有所体会。但随着 jupyter lab 官方插件 debugger 的横空出世，在 jupyter lab 中进行debug变得不再痛苦，充满了乐趣：
