@@ -61,6 +61,9 @@ torchvision        pytorch/win-64::torchvision-0.7.0-py38_cu101
 #conda install --use-local pytorch-1.6.0-py3.8_cuda101_cudnn7_0.tar.bz2
 #conda install --use-local torchvision-0.7.0-py38_cu101.tar.bz2
 
+conda list
+conda remove beautifulsoup4
+
 ##############node.js install#################
 node -v;npm -v
 
