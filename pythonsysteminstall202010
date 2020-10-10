@@ -49,6 +49,7 @@ pip3 install pyttsx3-2.90-py3-none-any.whl
 pip3 install python_docx-0.8.10-py2.py3-none-any.whl
 pip3 install dlib-19.21.0.tar.gz
 pip3 insatll PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 
 ##############node.js install#################
 node -v;npm -v
