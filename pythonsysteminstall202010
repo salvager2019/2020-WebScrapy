@@ -15,8 +15,6 @@ pip3 install octave_kernel
 cd  C:\Program Files\Polyspace\R2020b\extern\engines\python
 python setup.py install
 
-pip3 install notebook
-
 ##############visual studio 2019################
 企业版产品密钥为：
 Visual Studio 2019 Enterprise
@@ -33,3 +31,21 @@ conda install python-graphviz
 pip3 install -Uqq fastbook
 pip3 install --user graphviz
 conda update --all
+pip3 install notebook
+
+##############others install#################
+pip3 install graphviz
+pip3 install nbdev>=0.2.12
+pip3 install pandas
+pip3 install scikit_learn
+pip3 install azure-cognitiveservices-search-imagesearch
+pip3 install sentencepiece
+pip3 install ipywidgets
+
+pip3 install torchvision-0.7.0-cp38-cp38-win_amd64.whl
+pip3 install torch-1.6.0-cp38-cp38-win_amd64.whl
+pip3 install tensorflow_gpu-2.3.0-cp38-cp38-win_amd64.whl
+pip3 install pyttsx3-2.90-py3-none-any.whl
+pip3 install python_docx-0.8.10-py2.py3-none-any.whl
+pip3 install dlib-19.21.0.tar.gz
+pip3 insatll PyAudio-0.2.11-cp38-cp38-win_amd64.whl
