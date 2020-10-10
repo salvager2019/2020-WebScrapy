@@ -64,9 +64,25 @@ torchvision        pytorch/win-64::torchvision-0.7.0-py38_cu101
 conda list
 conda remove beautifulsoup4
 
-##############Test tensorflow#################
+##############Test tensorflow-01#################
 import tensorflow as tf
 hello = tf.constant('Hello, TensorFlow!')
+
+##############Test tensorflow-02#################
+import sys
+import tensorflow.keras
+import pandas as pd
+import sklearn as sk
+import tensorflow as tf
+
+print(f"Tensor Flow Version: {tf.__version__}")
+print(f"Keras Version: {tensorflow.keras.__version__}")
+print()
+print(f"Python {sys.version}")
+print(f"Pandas {pd.__version__}")
+print(f"Scikit-Learn {sk.__version__}")
+gpu = len(tf.config.list_physical_devices('GPU'))>0
+print("GPU is", "available" if gpu else "NOT AVAILABLE")
 
 ##############node.js install#################
 node -v;npm -v
