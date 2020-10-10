@@ -49,3 +49,84 @@ pip3 install pyttsx3-2.90-py3-none-any.whl
 pip3 install python_docx-0.8.10-py2.py3-none-any.whl
 pip3 install dlib-19.21.0.tar.gz
 pip3 insatll PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+
+##############node.js install#################
+node -v;npm -v
+
+
+##############jupyter lab ex install#################
+****2.1 debugger
+在 jupyter notebook 或 jupyter lab 中debug有多么蛋疼，尝试过的朋友们应该都有所体会。但随着 jupyter lab 官方插件 debugger 的横空出世，在 jupyter lab 中进行debug变得不再痛苦，充满了乐趣：
+但要注意当前的 debugger 插件基于 xeus 内核，这是与我们平常使用的 ipykernel 内核不太一样，所以要想在 jupyter lab 中使用 debugger 插件，需要先安装 xeus 内核再进行 debugger 的安装，安装过程命令如下：
+conda install xeus-python=0.8.0 -c conda-forge
+jupyter labextension install @jupyterlab/debugger
+官方文档： https://github.com/jupyterlab/debugger
+
+2.2 geojson-extension
+对于经常处理矢量数据的朋友而言， geojson 格式的文件想必也是比较熟悉，而 jupyter lab中的 geojson-extension 插件可以帮助我们在 jupyter lab 界面中以地图可视化的方式打开查看 geojson 文件：
+但要注意的是，因为是基于 leaflet 的界面，所以不要用这种方式来查看要素太多的 geojson文件（不过应该没有人会用 geojson 格式存大量矢量信息吧:grin:）
+安装命令：
+jupyter labextension install @jupyterlab/geojson-extension
+官方文档： https://github.com/jupyterlab/jupyter-renderers
+
+****2.3 jupyterlab-toc
+jupyterlab-toc 帮助我们在 notebook 界面利用 markdown 来创建目录，辅助我们更好地整合梳理数据分析工作流：
+安装命令：
+jupyter labextension install @jupyterlab/toc
+官方文档： https://github.com/jupyterlab/jupyterlab-toc
+
+****2.4 jupyter-matplotlib
+jupyter-matplotlib 帮助我们在 notebook 界面配合 matplotlib 实现交互式的作图，只需要在绘图之前执行魔法命令 %matplotlib widget ，之后绘制的所有 matplotlib 图表即可自动转换为交互式的：
+安装命令：
+pip install ipympl
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+官方文档： https://github.com/matplotlib/ipympl
+
+****2.5 jupyterlab-drawio
+jupyterlab-drawio 是一个让我们可以在 jupyter lab 界面内基于 drawio 绘制流程图、思维导图等示意图的插件：
+安装命令：
+jupyter labextension install jupyterlab-drawio
+官方文档： https://github.com/QuantStack/jupyterlab-drawio
+
+2.6 jupyterlab-execute-time
+jupyterlab-execute-time 插件帮助我们在 jupyter lab 中记录每个单元cell的执行开始以及运行耗时：
+安装命令：
+jupyter labextension install jupyterlab-execute-time
+官方文档： https://github.com/deshaw/jupyterlab-execute-time
+
+****2.7 jupyterlab-plotly
+jupyterlab-plotly 是一款帮助 plotly 图像在 jupyter lab 中正常渲染的插件：
+安装命令：
+jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.9.0
+官方文档： https://github.com/plotly/plotly.py
+
+****2.8 jupyterlab-spreadsheet
+jupyterlab-spreadsheet 帮助我们在 jupyter lab 中查看表格类文件，特别是其支持查看多工作表的excel表格文件：
+安装命令：
+jupyter labextension install jupyterlab-spreadsheet
+官方文档： https://github.com/quigleyj97/jupyterlab-spreadsheet
+
+2.9 jupyterlab-system-monitor
+jupyterlab-system-monitor 通过在 jupyter lab 界面中添加资源监视器部件，能帮助我们在工作过程中方便的看到CPU、内存的实时占用情况：
+安装命令：
+pip install nbresuse
+jupyter labextension install jupyterlab-topbar-extension jupyterlab-system-monitor
+官方文档： https://github.com/jtpio/jupyterlab-system-monitor
+
+****2.10 keplergl-jupyter
+keplergl-jupyter 是我使用非常频繁的 jupyter lab 插件，因为没有它就无法在 jupyter lab 中正常使用 keplergl ：
+安装命令：
+jupyter labextension install @jupyter-widgets/jupyterlab-manager keplergl-jupyter
+官方文档： https://github.com/keplergl/kepler.gl/tree/master/bindings/kepler.gl-jupyter
+
+****2.11 jupyterlab-kite
+这个插件我们之前的文章仔细介绍过，帮助我们建立代码补全神器 kite 与 jupyter lab 之间的通道，帮助我们在 jupyter lab 使用 kite 代码补全服务：
+安装命令（需要 jupyter lab 版本大于等于2.2.0）：
+pip install jupyter-kite
+jupyter labextension install @kiteco/jupyterlab-kite
+官方文档： https://github.com/kiteco/jupyterlab-kite
+
+****2.12 jupyterlab-variableInspector
+jupyterlab-variableInspector 帮助我们在 jupyter lab 中查看当前环境中存在的变量相关信息，以美观的界面形式对多种类型的对象予以呈现：
+安装命令：
+jupyter labextension install @lckr/jupyterlab_variableinspector
