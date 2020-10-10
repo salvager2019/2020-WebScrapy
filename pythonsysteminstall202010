@@ -114,6 +114,9 @@ nvidia-smi
 
 
 ##############jupyter lab ex install#################
+maybe you use 2.2.0a1
+pip3 install --pre jupyterlab==2.2.0a1
+
 ****2.1 debugger
 在 jupyter notebook 或 jupyter lab 中debug有多么蛋疼，尝试过的朋友们应该都有所体会。但随着 jupyter lab 官方插件 debugger 的横空出世，在 jupyter lab 中进行debug变得不再痛苦，充满了乐趣：
 但要注意当前的 debugger 插件基于 xeus 内核，这是与我们平常使用的 ipykernel 内核不太一样，所以要想在 jupyter lab 中使用 debugger 插件，需要先安装 xeus 内核再进行 debugger 的安装，安装过程命令如下：
