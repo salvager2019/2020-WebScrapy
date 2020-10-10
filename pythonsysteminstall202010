@@ -67,6 +67,21 @@ conda remove beautifulsoup4
 ##############node.js install#################
 node -v;npm -v
 
+##############node.js install#################
+fastai v2 windows运行错误解决：RuntimeError: cuda runtime error (801) : operation not supported at ..\torch/csrc/generic/StorageSharing.cpp:247
+解决办法：在ImageDataLoaders中添加：num_workers=0
+
+dls = ImageDataLoaders.from_folder(path, train='train', valid='test', item_tfms=Resize(224), num_workers=0) 
+此外在learn.predict()、interp = Interpretation.from_learner(learn)中也会出现同样的错误，需修改fastai\learner.py，添加n_workers = 0：
+
+    def get_preds(self, ds_idx=1, dl=None, with_input=False, with_decoded=False, with_loss=False, act=None,inner=False, reorder=True, cbs=None, n_workers=defaults.cpus, **kwargs):
+        n_workers = 0
+        if dl is None: dl = self.dls[ds_idx].new(shuffled=False, drop_last=False, num_workers=n_workers)
+
+CUDA error: CUBLAS_STATUS_NOT_INITIALIZED windows - Google Search
+install nvidia drivers
+nvidia-smi
+
 
 ##############jupyter lab ex install#################
 ****2.1 debugger
