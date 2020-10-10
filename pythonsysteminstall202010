@@ -30,6 +30,6 @@ NYWVH-HT4XC-R2WYW-9Y3CM-X4V3Y
 conda install -c fastai fastbook
 pip3 install fastbook
 conda install python-graphviz
-pip install -Uqq fastbook
-pip install --user graphviz
+pip3 install -Uqq fastbook
+pip3 install --user graphviz
 conda update --all
