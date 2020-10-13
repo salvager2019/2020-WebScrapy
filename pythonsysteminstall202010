@@ -3,6 +3,7 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\extras\CUPTI\lib64
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\lib\x64
+C:\Program Files\Graphviz 2.44.1\bin
 C:\Tools\cuda\bin
 C:\Tools\TensorRT-6.0.1.5
 C:\Tools\cuda
@@ -31,10 +32,11 @@ pip3 install tensorflow_gpu-2.3.0-cp38-cp38-win_amd64.whl
 conda install -c fastai fastbook
 pip3 install fastbook
 conda install python-graphviz
-pip2 install voila
+pip3 install voila
 pip3 install --user graphviz
 conda update --all
 pip3 install notebook
+
 
 ##############others install#################
 #pip3 install graphviz
