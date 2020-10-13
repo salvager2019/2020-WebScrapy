@@ -37,13 +37,15 @@ conda update --all
 pip3 install notebook
 
 ##############others install#################
-pip3 install graphviz
-pip3 install nbdev>=0.2.12
-pip3 install pandas
-pip3 install scikit_learn
-pip3 install azure-cognitiveservices-search-imagesearch
-pip3 install sentencepiece
-pip3 install ipywidgets
+#pip3 install graphviz
+#pip3 install nbdev>=0.2.12
+#pip3 install pandas
+#pip3 install scikit_learn
+#pip3 install azure-cognitiveservices-search-imagesearch
+#pip3 install sentencepiece
+#pip3 install ipywidgets
+conda install nodejs
+conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 
 
 pip3 install pyttsx3-2.90-py3-none-any.whl
@@ -52,8 +54,8 @@ pip3 install dlib-19.21.0.tar.gz
 pip3 insatll PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 
 
-conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
-conda install nodejs
+
+
 cudatoolkit        pkgs/main/win-64::cudatoolkit-10.1.243-h74a9793_0
 ninja              pkgs/main/win-64::ninja-1.10.1-py38h7ef1ec2_0
 pytorch            pytorch/win-64::pytorch-1.6.0-py3.8_cuda101_cudnn7_0
