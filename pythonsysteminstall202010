@@ -31,7 +31,7 @@ pip3 install tensorflow_gpu-2.3.0-cp38-cp38-win_amd64.whl
 conda install -c fastai fastbook
 pip3 install fastbook
 conda install python-graphviz
-
+pip2 install voila
 pip3 install --user graphviz
 conda update --all
 pip3 install notebook
