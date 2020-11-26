@@ -99,7 +99,7 @@ node -v;npm -v
 3\install package
 4\Monokai++ ayu terminus material(theme)
 5\"update_check": false,"draw_white_space": "all"
-6\{ "keys": ["ctrl+shift+t"], "command": "toggle_terminus_panel" }
+6\{ "keys": ["ctrl+shift+t"], "command": "toggle_terminus_panel"，"update_check": false,}
 
 
 ##############node.js install#################
