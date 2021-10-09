@@ -277,3 +277,70 @@ conda install Theano
 conda install ipline
 conda install TA-Lib
 conda install Seaborn
+
+
+conda init
+conda info --envs
+conda activate C:\ProgramData\Anaconda3
+set-ExecutionPolicy RemoteSigned
+
+
+vs code plug-in:
+atom one dark theme
+beautify
+bracket pair colorizer (1 2)
+c/c++
+code runner
+code spell checker
+dracula offical
+excel viewer
+go
+indent-rainbow
+microsoft python /jupyter/ jupyter keymap/jupyter notebook renderers/pylance
+markdown all in one
+material icon theme
+mongodb for vscode
+one dark bimbo
+one dark pro
+partial diff
+path intellisense
+prettier - code formatter
+sqlTools
+Sqltools sqlite
+tabnine
+kite
+vetur
+vscode-icons
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
